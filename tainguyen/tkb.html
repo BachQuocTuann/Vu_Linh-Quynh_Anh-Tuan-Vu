@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thời Khóa Biểu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        .tabs {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        label {
+            background: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .schedule {
+            display: none;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #007BFF;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Thời Khóa Biểu</h1>
+        <div class="tabs">
+            <label onclick="showSchedule('schedule10')">Khối 10</label>
+            <label onclick="showSchedule('schedule11')">Khối 11</label>
+            <label onclick="showSchedule('schedule12')">Khối 12</label>
+        </div>
+
+        <div class="content">
+            <div class="schedule" id="schedule10" style="display: block;">
+                <h2>Thời Khóa Biểu Khối 10</h2>
+                <table>
+                    <tr>
+                        <th>Thứ</th>
+                        <th>Tiết 1</th>
+                        <th>Tiết 2</th>
+                        <th>Tiết 3</th>
+                        <th>Tiết 4</th>
+                        <th>Tiết 5</th>
+                    </tr>
+                    <tr>
+                        <td>Thứ 2</td>
+                        <td>CHAOCO - TrangT</td>
+                        <td>ANH - TPhươngNN</td>
+                        <td>ANH - TPhươngNN</td>
+                        <td>TOAN - TrangT</td>
+                        <td>SINH - HoaSV</td>
+                    </tr>
+                    <tr>
+                        <td>Thứ 3</td>
+                        <td>VAN - HuệV</td>
+                        <td>TIN - Khuyên.Ti</td>
+                        <td>HOA - ThuỷH</td>
+                        <td>LY - ThuậnL</td>
+                        <td>GDĐP - DươngĐ</td>
+                    </tr>
+                    <tr>
+                        <td>Thứ 4</td>
+                        <td>TNHN - TrangH</td>
+                        <td>TOAN - TrangT</td>
+                        <td>ToanCĐ - TrangT</td>
+                        <td>SU - CườngS</td>
+                        <td>HOA - ThuỷH</td>
+                    </tr>
+                    <tr>
+                        <td>Thứ 5</td>
+                        <td>VAN - HuệV</td>
+                        <td>VAN - HuệV</td>
+                        <td>GDTC - NinhHĐ</td>
+                        <td>TIN - Khuyên.Ti</td>
+                        <td>SINH - HoaSV</td>
+                    </tr>
+                    <tr>
+                        <td>Thứ 6</td>
+                        <td>HoaCĐ - ThuỷH</td>
+                        <td>LY - ThuậnL</td>
+                        <td>TNHN - TrangH</td>
+                        <td>VanCĐ - HuệV</td>
+                        <td>ANH - TPhươngNN</td>
+                    </tr>
+                    <tr>
+                        <td>Thứ 7</td>
+                        <td>GDTC - NinhHĐ</td>
+                        <td>TOAN - TrangT</td>
+                        <td>TNHN - TrangH</td>
+                        <td>SH - TrangT</td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="schedule" id="schedule11">
+                <h2>Thời Khóa Biểu Khối 11</h2>
+                <table>
+                    <tr>
+                        <th>Thứ</th>
+                        <th>Tiết 1</th>
+                        <th>Tiết 2</th>
+                        <th>Tiết 3</th>
+                        <th>Tiết 4</th>
+                        <th>Tiết 5</th>
+                    </tr>
+                    <tr>
+                        <td>Thứ 2</td>
+                        <td>CHAOCO - TrangT</td>
+                        <td>ANH - TPhươngNN</td>
+                        <td>ANH - TPhươngNN</td>
+                        <td>TOAN - TrangT</td>
+                        <td>SINH - HoaSV</td>
+                    </tr>
+                    <tr>
+                        <td>Thứ 3</td>
+                        <td>VAN - HuệV</td>
+                        <td>TIN - Khuyên.Ti</td>
+                        <td>HOA - ThuỷH</td>
+                        <td>LY - ThuậnL</td>
+                        <td>GDĐP - DươngĐ</td>
+                    </tr>
+                    <tr>
+                        <td>Thứ 4</td>
+                        <td>TNHN - TrangH</td>
+                        <td>TOAN - TrangT</td>
+                        <td>ToanCĐ - TrangT</td>
+                        <td>SU - CườngS</td>
+                        <td>HOA - ThuỷH</td>
+                    </tr>
+                    <tr>
+                        <td>Thứ 5</td>
+                        <td>VAN - HuệV</td>
+                        <td>VAN - HuệV</td>
+                        <td>GDTC - NinhHĐ</td>
+                        <td>TIN - Khuyên.Ti</td>
+                        <td>SINH - HoaSV</td>
+                    </tr>
+                    <tr>
+                        <td>Thứ 6</td>
+                        <td>HoaCĐ - ThuỷH</td>
+                        <td>LY - ThuậnL</td>
+                        <td>TNHN - TrangH</td>
+                        <td>VanCĐ - HuệV</td>
+                        <td>ANH - TPhươngNN</td>
+                    </tr>
+                    <tr>
+                        <td>Thứ 7</td>
+                        <td>GDTC - NinhHĐ</td>
+                        <td>TOAN - TrangT</td>
+                        <td>TNHN - TrangH</td>
+                        <td>SH - TrangT</td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="schedule" id="schedule12">
+                <h2>Thời Khóa Biểu Khối 12</h2>
+                <table>
+                    <tr>
+                        <th>Thứ</th>
+                        <th>Tiết 1</th>
+                        <th>Tiết 2</th>
+                        <th>Tiết 3</th>
+                        <th>Tiết 4</th>
+                        <th>Tiết 5</th>
+                    </tr>
+                    <tr>
+                        <td>Thứ 2</td>
+                        <td>CHAOCO - TrangT</td>
+                        <td>ANH - TPhươngNN</td>
+                        <td>ANH - TPhươngNN</td>
+                        <td>TOAN - TrangT</td>
+                        <td>SINH - HoaSV</td>
+                    </tr>
+                    <tr>
+                        <td>Thứ 3</td>
+                        <td>VAN - HuệV</td>
+                        <td>TIN - Khuyên.Ti</td>
+                        <td>HOA - ThuỷH</td>
+                        <td>LY - ThuậnL</td>
+                        <td>GDĐP - DươngĐ</td>
+                    </tr>
+                    <tr>
+                        <td>Thứ 4</td>
+                        <td>TNHN - TrangH</td>
+                        <td>TOAN - TrangT</td>
+                        <td>ToanCĐ - TrangT</td>
+                        <td>SU - CườngS</td>
+                        <td>HOA - ThuỷH</td>
+                    </tr>
+                    <tr>
+                        <td>Thứ 5</td>
+                        <td>VAN - HuệV</td>
+                        <td>VAN - HuệV</td>
+                        <td>GDTC - NinhHĐ</td>
+                        <td>TIN - Khuyên.Ti</td>
+                        <td>SINH - HoaSV</td>
+                    </tr>
+                    <tr>
+                        <td>Thứ 6</td>
+                        <td>HoaCĐ - ThuỷH</td>
+                        <td>LY - ThuậnL</td>
+                        <td>TNHN - TrangH</td>
+                        <td>VanCĐ - HuệV</td>
+                        <td>ANH - TPhươngNN</td>
+                    </tr>
+                    <tr>
+                        <td>Thứ 7</td>
+                        <td>GDTC - NinhHĐ</td>
+                        <td>TOAN - TrangT</td>
+                        <td>TNHN - TrangH</td>
+                        <td>SH - TrangT</td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showSchedule(scheduleId) {
+            document.querySelectorAll('.schedule').forEach(el => el.style.display = 'none');
+            document.getElementById(scheduleId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
